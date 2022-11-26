@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import {} from 'date-fns/locale/pt-BR'
+import ptBR from 'date-fns/locale/pt-BR'
 
 import { Avatar } from './Avatar';
 import { Comment } from './Comment';
@@ -8,7 +8,9 @@ import styles from './Post.module.css';
 
 
 export function Post({author, publishedAt}) {
-    const publishedAtFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'");
+    const publishedAtFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
+        locale: ptBR,
+    });
 
     return(
         <article className={styles.post}>
