@@ -8,7 +8,7 @@ import styles from './Post.module.css';
 
 
 export function Post({author, publishedAt}) {
-    const publishedAtFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
+    const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
         locale: ptBR,
     });
 
@@ -24,7 +24,7 @@ export function Post({author, publishedAt}) {
                 </div>
 
                 <time title="" dateTime='2022-11-22 08:13:30'>
-                    {publishedAtFormatted}
+                    {publishedDateFormatted}
                 </time>
             </header>
 
