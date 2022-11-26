@@ -1,0 +1,14 @@
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+}   
+.avatarWithBorder {
+    /* box-sizing: initial;  ==== Um dos modos para desconprimir a imagem após o uso do border e do outline*/
+
+    width: calc(3rem + 12px); /*Outro modo de descomprimir a imagem é usando o calculo. Somando as bordas dos lados e somando pelo tamanho da imagem*/
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-500);
+}
